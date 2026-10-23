@@ -15,3 +15,5 @@ Games by Thendar, served by GitHub Pages at https://thendar-git.github.io.
 3. If the game shows AdMob ads under a different publisher ID, add its line to `app-ads.txt`.
 
 Plain HTML and CSS with no build step. Edit a file, push to `main`, and Pages republishes in about a minute.
+
+Browsers keep `assets/style.css` for up to 10 minutes. After changing it, bump the `?v=` number in every page's stylesheet link so visitors get the new version at once.
