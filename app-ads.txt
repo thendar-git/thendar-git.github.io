@@ -1,0 +1,5 @@
+# app-ads.txt for Word Jungle (com.word.jungle)
+# AdMob reads this file to confirm these apps' ads are authorized.
+# Replace the line below with the one AdMob shows you
+# (AdMob > Apps > View all apps > app-ads.txt), then uncomment it.
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
