@@ -1,0 +1,74 @@
+/* Space Jargon Jr page theme. Loads after style.css and swaps its Word Jungle
+   tokens for Space Jargon Jr's (android/assets/www/css/game.css). The game is
+   bright-only, so the page stays light even when the visitor prefers dark. */
+:root,
+:root:root {
+  --bg: #F6F1FF;
+  --raised: #FFFFFF;
+  --veil: #ECE3FF;
+  --text: #24143D;
+  --text-dim: #45355F;
+  --text-faint: #65587D;
+  --glow: #5B35D5;
+  --warm: #FF7A00;
+  --rust: #4B23C4;
+  --rust-ink: #FFFFFF;
+  --hairline: rgba(36, 20, 61, 0.12);
+  --link: #5B35D5;
+  --display: 'Arial Rounded MT Bold', 'Segoe UI', 'Trebuchet MS', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  :root:root {
+    --bg: #F6F1FF;
+    --raised: #FFFFFF;
+    --veil: #ECE3FF;
+    --text: #24143D;
+    --text-dim: #45355F;
+    --text-faint: #65587D;
+    --glow: #5B35D5;
+    --warm: #FF7A00;
+    --rust: #4B23C4;
+    --rust-ink: #FFFFFF;
+    --hairline: rgba(36, 20, 61, 0.12);
+    --link: #5B35D5;
+    color-scheme: light;
+  }
+}
+
+body { position: relative; overflow-x: hidden; }
+
+/* The game's Sunny Pop sky (game.css #sky), fading into the page background. */
+.sky {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 760px;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(246, 241, 255, 0.25) 0%, rgba(246, 241, 255, 0.7) 62%, #F6F1FF 100%),
+    linear-gradient(165deg, #7AD7FF, #FFD166 48%, #FF8FAB);
+}
+
+.site-head { border-bottom-color: rgba(36, 20, 61, 0.1); }
+.brand { font-size: 19px; font-weight: 700; }
+.hero h1 { margin: 0 0 14px; font-weight: 700; color: var(--text); }
+.tagline { font-weight: 600; }
+h2 { font-weight: 700; }
+.hero-shot { box-shadow: 0 18px 50px rgba(91, 53, 213, 0.28), 0 0 0 1px rgba(36, 20, 61, 0.06); }
+.features li { box-shadow: 0 6px 0 rgba(36, 20, 61, 0.06); }
+.soon-pill { background: rgba(255, 255, 255, 0.9); box-shadow: 0 6px 0 rgba(36, 20, 61, 0.1); }
+.soon { color: var(--text-dim); }
+.banner { margin: 40px 0 0; }
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--hairline);
+}
+
+@media (max-width: 720px) {
+  .sky { height: 620px; }
+}
