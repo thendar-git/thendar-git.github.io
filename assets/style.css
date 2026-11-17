@@ -134,6 +134,16 @@ a:focus-visible, .button:focus-visible {
   text-decoration: none;
 }
 .button:hover { filter: brightness(1.08); text-decoration: none; }
+.soon-pill {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 13px 26px;
+  border-radius: 9999px;
+  border: 1px solid var(--hairline);
+  background: var(--raised);
+  color: var(--text);
+  font-weight: 600;
+}
 .soon { display: block; margin-top: 10px; color: var(--text-faint); font-size: 14px; }
 
 section { padding: 32px 0 0; }
