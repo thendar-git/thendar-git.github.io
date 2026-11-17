@@ -5,7 +5,7 @@ Games by Thendar, served by GitHub Pages at https://thendar-git.github.io.
 - `index.html`: the games page, one large tile per game.
 - `word-jungle/`: Word Jungle's page, its images (`img/`) and its privacy policy (`privacy/`, linked from Play Console and from the app).
 - `Space_Jargon/`: Space Jargon's page and its images (`img/`). Its theme is `assets/space-jargon.css`, which loads after `style.css`. Its privacy policy is in `privacy/`, a copy of the one on the Google Sites page. Its terms of service are in `terms/`.
-- `space-jargon-jr/`: Space Jargon Jr's page, its images (`img/`) and its privacy policy (`privacy/`). Its bright theme is `assets/space-jargon-jr.css`, which loads after `style.css`.
+- `space-jargon-jr/`: Space Jargon Jr's page, its images (`img/`) its privacy policy (`privacy/`) and its terms of service (`terms/`). Its bright theme is `assets/space-jargon-jr.css`, which loads after `style.css`.
 - `privacy/`: forwards to `/word-jungle/privacy/`, the policy's first address.
 - `app-ads.txt`: AdMob's authorized-seller file for every game. It must stay at the site root.
 - `assets/`: the shared stylesheet and site icons.
